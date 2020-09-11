@@ -15,6 +15,8 @@
 		F1434376250961E100432B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1434374250961E100432B54 /* LaunchScreen.storyboard */; };
 		F143437E250961F500432B54 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143437D250961F500432B54 /* NetworkingService.swift */; };
 		F1434380250962FD00432B54 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143437F250962FD00432B54 /* PersistenceService.swift */; };
+		F14F4192250A77F300D567E7 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F4190250A77F300D567E7 /* User+CoreDataClass.swift */; };
+		F14F4193250A77F300D567E7 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F4191250A77F300D567E7 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F1434377250961E100432B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F143437D250961F500432B54 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		F143437F250962FD00432B54 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		F14F4190250A77F300D567E7 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F14F4191250A77F300D567E7 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				F1434366250961DF00432B54 /* AppDelegate.swift */,
+				F14F4190250A77F300D567E7 /* User+CoreDataClass.swift */,
+				F14F4191250A77F300D567E7 /* User+CoreDataProperties.swift */,
 				F143436A250961DF00432B54 /* ViewController.swift */,
 				F143436C250961DF00432B54 /* Main.storyboard */,
 				F1434372250961E100432B54 /* Assets.xcassets */,
@@ -145,6 +151,8 @@
 			files = (
 				F143437E250961F500432B54 /* NetworkingService.swift in Sources */,
 				F1434380250962FD00432B54 /* PersistenceService.swift in Sources */,
+				F14F4192250A77F300D567E7 /* User+CoreDataClass.swift in Sources */,
+				F14F4193250A77F300D567E7 /* User+CoreDataProperties.swift in Sources */,
 				F143436B250961DF00432B54 /* ViewController.swift in Sources */,
 				F1434367250961DF00432B54 /* AppDelegate.swift in Sources */,
 				F1434371250961DF00432B54 /* PersistedJSON.xcdatamodeld in Sources */,
