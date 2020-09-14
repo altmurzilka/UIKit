@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,13 +31,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kdq-AA-enN">
                                 <rect key="frame" x="190" y="68" width="303" height="279"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-3E-trw">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-3E-trw">
                                 <rect key="frame" x="343" y="363" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close"/>
@@ -44,8 +46,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tOM-d4-aYP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5B-3D-gI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -69,7 +71,7 @@
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="separatorColor"/>
                                 </state>
                                 <connections>
                                     <action selector="close" destination="8nL-Km-02Y" eventType="touchUpInside" id="afM-FJ-RQe"/>
@@ -82,7 +84,7 @@
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="About author" backgroundImage="Button-Normal">
                                     <color key="titleColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="separatorColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="czv-SZ-BC3" kind="presentation" modalTransitionStyle="flipHorizontal" id="sXy-Jy-IUk"/>
@@ -97,25 +99,22 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="h7L-2h-aLD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="cpQ-nN-b1L" firstAttribute="trailing" secondItem="zF1-Jf-pNR" secondAttribute="trailing" id="1JF-Wb-c0w"/>
                             <constraint firstItem="h7L-2h-aLD" firstAttribute="bottom" secondItem="qZA-c7-vSu" secondAttribute="bottom" constant="20" id="1zw-Rk-O4z"/>
                             <constraint firstItem="zF1-Jf-pNR" firstAttribute="top" secondItem="h7L-2h-aLD" secondAttribute="top" id="3He-mG-LP6"/>
                             <constraint firstItem="K2m-Yz-aR5" firstAttribute="top" secondItem="cpQ-nN-b1L" secondAttribute="bottom" constant="20" id="55R-k1-FKM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cpQ-nN-b1L" secondAttribute="trailing" constant="20" id="7U6-Rr-8bc"/>
                             <constraint firstItem="cpQ-nN-b1L" firstAttribute="leading" secondItem="h7L-2h-aLD" secondAttribute="leading" constant="20" id="AII-HU-QHK"/>
                             <constraint firstItem="h7L-2h-aLD" firstAttribute="bottom" secondItem="K2m-Yz-aR5" secondAttribute="bottom" constant="20" id="EcH-fU-VqJ"/>
                             <constraint firstItem="cpQ-nN-b1L" firstAttribute="top" secondItem="h7L-2h-aLD" secondAttribute="top" constant="20" id="PDk-25-j2T"/>
                             <constraint firstAttribute="trailing" secondItem="zF1-Jf-pNR" secondAttribute="trailing" id="Pyx-zG-o3K"/>
-                            <constraint firstItem="K2m-Yz-aR5" firstAttribute="top" secondItem="cpQ-nN-b1L" secondAttribute="bottom" id="VT7-hX-K5V"/>
-                            <constraint firstItem="K2m-Yz-aR5" firstAttribute="top" secondItem="cpQ-nN-b1L" secondAttribute="bottom" constant="20" id="bLm-7q-v39"/>
                             <constraint firstAttribute="trailing" secondItem="qZA-c7-vSu" secondAttribute="trailing" constant="20" id="cO0-jJ-CvG"/>
                             <constraint firstItem="K2m-Yz-aR5" firstAttribute="centerX" secondItem="PRn-jY-QTN" secondAttribute="centerX" id="jMJ-pO-FtM"/>
                             <constraint firstItem="zF1-Jf-pNR" firstAttribute="bottom" secondItem="h7L-2h-aLD" secondAttribute="bottom" id="n4o-rh-Bc6"/>
-                            <constraint firstAttribute="trailing" secondItem="cpQ-nN-b1L" secondAttribute="trailing" id="nAu-nA-Kor"/>
                             <constraint firstItem="zF1-Jf-pNR" firstAttribute="leading" secondItem="h7L-2h-aLD" secondAttribute="leading" id="nCR-8W-Rfm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="h7L-2h-aLD"/>
                     </view>
                     <connections>
                         <outlet property="webView" destination="cpQ-nN-b1L" id="Kc4-pE-vdc"/>
@@ -145,7 +144,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwa-dh-XgU">
@@ -154,7 +153,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-Mm-lCo">
@@ -170,7 +169,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UC3-Ds-zTy">
@@ -179,7 +178,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsZ-Ok-5xB">
@@ -196,7 +195,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efN-nv-GLP">
@@ -205,7 +204,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpl-Qq-7Hr">
@@ -214,7 +213,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-qN-Als">
@@ -223,7 +222,7 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
-                                        <color key="shadowColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="separatorColor"/>
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0H-Y9-VcK">
@@ -233,7 +232,7 @@
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
                                             <color key="titleColor" red="0.37647058823529411" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <color key="titleShadowColor" systemColor="lightTextColor"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                         <connections>
@@ -256,7 +255,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mz2-zK-NqQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Odj-uf-Erd"/>
                             <constraint firstItem="mz2-zK-NqQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TQM-y1-IgG"/>
@@ -265,7 +265,6 @@
                             <constraint firstItem="bZs-4w-CIL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="t4c-fn-Oas"/>
                             <constraint firstAttribute="trailing" secondItem="bZs-4w-CIL" secondAttribute="trailing" id="wvc-De-OMy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="roundLabel" destination="Mya-qN-Als" id="Xxn-8S-1J0"/>
@@ -287,5 +286,17 @@
         <image name="RayWithBooks" width="1200" height="1200"/>
         <image name="SmallButton" width="32" height="32"/>
         <image name="StartOverIcon" width="20" height="20"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
