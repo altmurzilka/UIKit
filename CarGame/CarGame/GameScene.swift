@@ -141,5 +141,21 @@ class GameScene: SKScene {
         }
     }
     
-    
+    func leftTraffic() {
+        let leftTrafficItem : SKSpriteNode!
+        let randomNumber = Helper().randomBetweenTwoNumbers(firstNumber: 1, secondNumber: 8)
+        switch Int(randomNumber) {
+        case 1...4:
+            leftTrafficItem = SKSpriteNode(imageNamed: "redCar")
+            leftTrafficItem.name = "redCar"
+            break
+        case 5...8:
+            leftTrafficItem = SKSpriteNode(imageNamed: "blueCar")
+            leftTrafficItem.name = "blueCar"
+            break
+        default:
+            leftTrafficItem = SKSpriteNode(imageNamed: "redCar")
+            leftTrafficItem.name = "redCar"
+        }
+    }
 }
